@@ -330,7 +330,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen" style={{ background: "#070707" }}>
+    <div className="min-h-screen" style={{ background: "#070707", overflowX: "hidden" }}>
       <Navbar />
 
       {/* ══════════════════════ HERO ══════════════════════ */}

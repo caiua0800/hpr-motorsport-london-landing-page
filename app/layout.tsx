@@ -32,8 +32,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html
       lang="en"
       className={`${geist.variable} ${barlowCondensed.variable} h-full`}
+      style={{ overflowX: 'hidden' }}
     >
-      <body className="min-h-full" style={{ fontFamily: 'var(--font-geist), system-ui, sans-serif' }}>
+      <body
+        className="min-h-full"
+        style={{
+          fontFamily: 'var(--font-geist), system-ui, sans-serif',
+          overflowX: 'hidden',
+          maxWidth: '100vw',
+        }}
+      >
         <LanguageProvider>{children}</LanguageProvider>
       </body>
     </html>

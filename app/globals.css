@@ -106,12 +106,18 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100%;
+}
 
 body {
   background-color: #070707;
   color: #ffffff;
   overflow-x: hidden;
+  max-width: 100%;
+  position: relative;
 }
 
 ::-webkit-scrollbar { width: 5px; }
